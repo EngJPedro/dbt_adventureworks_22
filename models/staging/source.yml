@@ -1,109 +1,101 @@
 version: 2
 
 sources:
-  - name: Adventureworks
-  description: Datawarehousing
-    tables:
-      - name: employee
-        description: One record per order. Includes cancelled and deleted orders
-        columns:
-          - name: businessentityid
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
-      - name: person_address
-        description:
-          One record per order. Includes cancelled and deleted orders
-        columns:
-          - name: addressid
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
-      - name: person_countryregion
-        description:
-          One record per order. Includes cancelled and deleted orders
-        columns:
-          - name: countryregioncode
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
-      - name: person_person
-        description:
-          One record per order. Includes cancelled and deleted orders
-        columns:
-          - name: businessentityid
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
-      - name: person_stateprovince
-        description:
-          One record per order. Includes cancelled and deleted orders
-        columns:
-          - name: stateprovinceid
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
-      - name: product
-        description:
-          One record per order. Includes cancelled and deleted orders
-        columns:
-          - name: productid
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
-      - name: sales_customer
-        description:
-          One record per order. Includes cancelled and deleted orders
-        columns:
-          - name: customerid
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
-      - name: sales_order_detail
-        description:
-          One record per order. Includes cancelled and deleted orders
-        columns:
-          - name: salesorderid
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
-          - name: salesorderdetailid
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
-      - name: sales_order_header
-        description:
-          One record per order. Includes cancelled and deleted orders
-        columns:
-          - name: salesorderid
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
-      - name: sales_person
-        description:
-          One record per order. Includes cancelled and deleted orders
-        columns:
-          - name: businessentityid
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
-      - name: sales_reason
-        description:
-          One record per order. Includes cancelled and deleted orders
-        columns:
-          - name: salesreasonid
-            description: Primary key of the orders table
-            tests:
-              - unique
-              - not_null
+    - name: Adventureworks
+      description: Datawarehousing
+      tables:
+        - name: person_address
+          description: >
+            One record per order. Includes cancelled and deleted orders
+          columns:
+            - name: addressid
+              description: Primary key of the orders table
+              tests:
+                - unique
+                - not_null
+        - name: person_countryregion
+          description: >
+            One record per order. Includes cancelled and deleted orders
+          columns:
+            - name: countryregioncode
+              description: Primary key of the orders table
+              tests:
+                - unique
+                - not_null
+        - name: person_person
+          description: >
+            One record per order. Includes cancelled and deleted orders
+          columns:
+            - name: businessentityid
+              description: Primary key of the orders table
+              tests:
+                - unique
+                - not_null
+        - name: person_stateprovince
+          description: >
+            One record per order. Includes cancelled and deleted orders
+          columns:
+            - name: stateprovinceid
+              description: Primary key of the orders table
+              tests:
+                - unique
+                - not_null
+        - name: product
+          description: >
+            One record per order. Includes cancelled and deleted orders
+          columns:
+            - name: productid
+              description: Primary key of the orders table
+              tests:
+                - unique
+                - not_null
+        - name: sales_customer
+          description: >
+            One record per order. Includes cancelled and deleted orders
+          columns:
+            - name: customerid
+              description: Primary key of the orders table
+              tests:
+                - unique
+                - not_null
+        - name: sales_order_detail
+          description: >
+            One record per order. Includes cancelled and deleted orders
+          columns:
+            - name: salesorderid
+              description: Primary key of the orders table
+              tests:
+                - unique
+                - not_null
+            - name: salesorderdetailid
+              description: Primary key of the orders table
+              tests:
+                - unique
+                - not_null
+        - name: sales_order_header
+          description: >
+            One record per order. Includes cancelled and deleted orders
+          columns:
+            - name: salesorderid
+              description: Primary key of the orders table
+              tests:
+                - unique
+                - not_null
+        - name: sales_person
+          description: >
+            One record per order. Includes cancelled and deleted orders
+          columns:
+            - name: businessentityid
+              description: Primary key of the orders table
+              tests:
+                - unique
+                - not_null
+        - name: sales_reason
+          description: >
+            One record per order. Includes cancelled and deleted orders
+          columns:
+            - name: salesreasonid
+              description: Primary key of the orders table
+              tests:
+                - unique
+                - not_null
